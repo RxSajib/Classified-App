@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:background="@drawable/catagory_ripple"
+    android:layout_height="@dimen/_50sdp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_centerVertical="true"
+                android:id="@+id/CatagoryNameID"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/carbon_black_87"
+                android:textSize="@dimen/_13sdp"
+                android:text="CatagoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

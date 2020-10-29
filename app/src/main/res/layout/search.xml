@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomTab.Search">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ProductToolbarID"
+        android:elevation="@dimen/_10sdp"
+        android:background="@color/carbon_black_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/location_colour"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_20sdp">
+                    </ImageView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:text="Dhaka"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/carbon_black_87"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/collection_icon_colour"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_20sdp">
+                    </ImageView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:text="Car"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/carbon_black_87"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/filter_update"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_20sdp">
+                    </ImageView>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:paddingBottom="@dimen/_5sdp"
+        android:background="@color/carbon_black_6"
+        android:elevation="@dimen/_10sdp"
+        android:layout_below="@+id/ProductToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:src="@drawable/delevery_icon_colour"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp">
+            </ImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_8sdp"
+                android:text="Doorstep delivery"
+                android:background="@drawable/derostep_delevery_background"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColor="@color/carbon_white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+        </LinearLayout>
+
+        <Switch
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Switch>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

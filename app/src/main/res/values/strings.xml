@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Digital Business Owners</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="mypost">My Post</string>
+    <string name="Mymembership">My Membership</string>
+    <string name="Favorites">Favorites</string>
+    <string name="Profile">Profile</string>
+    <string name="StaySafe">Stay Safe</string>
+    <string name="FDQ">FDQ</string>
+    <string name="howsellquickly">How to sell quickly</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+
+    <string name="catagoryone">Any product property or services sold</string>
+    <string name="catagorytwo">Rent for property Advertising</string>
+    <string name="catagorythree">For recruitment job advertising post</string>
+    <string name="catagoryfour">Searching for any product Buy</string>
+    <string name="catagoryfive">Searching for any rent</string>
+
+    <string name="azad_kashmir">Azad Kashmir</string>
+    <string name="balochistan">Balochistan</string>
+    <string name="islamabad_capital_territory">Islamabad Capital Territory</string>
+    <string name="khyber_pakhtunkhwa">Khyber Pakhtunkhwa</string>
+    <string name="northern_areas">Northern Areas</string>
+    <string name="punjab">Punjab</string>
+    <string name="sindh">Sindh</string>
+
+    <string name="bagh">Bagh</string>
+    <string name="bhimber">Bhimber</string>
+    <string name="hajira">Hijira</string>
+    <string name="kotli">Kotli</string>
+    <string name="mirpur">Mirpur</string>
+    <string name="muzaffarabad">Muzaffarabad</string>
+    <string name="pallandri">Pallandri</string>
+    <string name="rawalakot">Rawalakot</string>
+
+    <string name="bela">Bela</string>
+    <string name="gwadar">Gwadar</string>
+    <string name="jiwani">Jiwani</string>
+    <string name="kalat">Kalat</string>
+    <string name="khuzdar">Khuzdar</string>
+    <string name="lasbela">Lasbela</string>
+    <string name="loralai">Loralai</string>
+    <string name="ormara">Ormara</string>
+    <string name="pasni">Pasni</string>
+    <string name="quetta">Quetta</string>
+    <string name="zhob">Zhob</string>
+    <string name="islamabad">Islamabad</string>
+
+
+    <string name="abbottabad">Abbottabad</string>
+    <string name="Ali_Masjid">Ali Masjid</string>
+    <string name="bannnu">Bannu</string>
+    <string name="Batagram">Batagram</string>
+    <string name="Buner">Buner</string>
+    <string name="Charsadda">Charsadda</string>
+    <string name="Chitral">Chitral</string>
+    <string name="Darra_Adam_Khel">Darra Adam Khel</string>
+    <string name="Dera_Ismail_Khan">Dera Ismail Khan</string>
+    <string name="Hangu">Hangu</string>
+    <string name="Haripur">Haripur</string>
+    <string name="Jamrud">Jamrud</string>
+    <string name="Jandola">Jandola</string>
+    <string name="Karak">Karak</string>
+    <string name="Kohat">Kohat</string>
+    <string name="Kohistan">Kohistan</string>
+    <string name="Lakki_Marwat">Lakki Marwat</string>
+    <string name="Landi_Kotal">Landi Kotal</string>
+    <string name="Lower_Dir">Lower Dir</string>
+    <string name="Malakand">Malakand</string>
+    <string name="Mansehra">Mansehra</string>
+    <string name="Mardan">Mardan</string>
+    <string name="Mingaora">Mingaora</string>
+    <string name="Miram_Shah">Miram Shah</string>
+    <string name="Nowshera">Nowshera</string>
+    <string name="Parachinar">Parachinar</string>
+    <string name="Peshawar">Peshawar</string>
+    <string name="Shangla">Shangla</string>
+    <string name="Swabi">Swabi</string>
+    <string name="Swat">Swat</string>
+    <string name="Tank">Tank</string>
+    <string name="Torkham">Torkham</string>
+    <string name="Upper_Dir">Upper Dir</string>
+    <string name="Wana">Wana</string>
+
+</resources>

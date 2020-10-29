@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryPage.Azad_Kahmer">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/ToolbarID"
+                android:background="@color/carbon_amber_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pakistanflag"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp">
+                    </ImageView>
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:text="@string/azad_kashmir"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/carbon_black_87"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/AzadKashmirID"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ToolbarID"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

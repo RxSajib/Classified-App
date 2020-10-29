@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Register.PhoneLogin">
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:textColor="@color/carbon_black"
+        android:text="Sign up to\nKeep your Digital Business"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/Title"
+        android:textSize="@dimen/_18sdp"
+        app:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:text="Add your phone number.We'll send you a\nverification code so we know you're real."
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Details"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/Number"
+        android:layout_below="@+id/Details"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/CodeBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/CountryCodePicker"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="true"
+                app:ccp_textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content">
+
+            </com.hbb20.CountryCodePicker>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/NumberInput"
+            android:layout_toRightOf="@id/CodeBox"
+            android:background = "@null"
+            android:textSize="@dimen/_14sdp"
+            android:layout_toLeftOf="@+id/CrossButton"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:hint="Phone Number"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textColorHint="@color/carbon_black_87"
+            android:textColor="@color/carbon_black_87"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+        <RelativeLayout
+            android:id="@+id/CrossButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_12sdp"
+            android:background="@drawable/cross_background"
+            android:layout_height="@dimen/_12sdp">
+
+            <ImageView
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/close_white"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/_13sdp">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/GetOTPButton"
+        android:layout_below="@+id/Number"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:background="@drawable/number_button_back"
+        android:layout_height="@dimen/_40sdp">
+
+        <RelativeLayout
+            android:background="@drawable/otp_button_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/carbon_white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:text="SEND OTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:background="@drawable/number_oval"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:src="@drawable/right_arraw"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_below="@id/GetOTPButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_10sdp"
+        android:text="By providing my phone number, I already agreed and accept the Terms of Services and Privacy Policy in use of the SBB App"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenAndOnboarding.OnboardingScreen">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ViewPager"
+        android:layout_above="@+id/OnboardingDots"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/OnboardingDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/NextButtonID"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/carbon_green_700"
+            android:text="NEXT"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:background = "@drawable/ripple_without_boarder"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+
+
+
+</RelativeLayout>

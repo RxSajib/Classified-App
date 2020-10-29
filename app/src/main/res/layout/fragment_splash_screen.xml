@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SplashScreenAndOnboarding.SplashScreen">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="worldmap.json"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+    <ProgressBar
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:indeterminateTint="@color/carbon_red_600"
+        android:backgroundTint="@color/carbon_red_600"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+
+</RelativeLayout>
