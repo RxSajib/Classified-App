@@ -116,11 +116,83 @@ public class KhyberPakhtunkhwa extends Fragment {
         Twenty.setName(getString(R.string.Malakand));
 
         Location Twentyone = new Location();
-        Twentyone.setName(getString(R.string.Malakand));
+        Twentyone.setName(getString(R.string.Mansehra));
 
+        Location Twentytwo = new Location();
+        Twentytwo.setName(getString(R.string.Mardan));
+
+        Location Twentythree = new Location();
+        Twentythree.setName(getString(R.string.Mingaora));
+
+        Location Twentytfour = new Location();
+        Twentytfour.setName(getString(R.string.Miram_Shah));
+
+        Location Twentytfive = new Location();
+        Twentytfive.setName(getString(R.string.Nowshera));
+
+        Location TwentytSix = new Location();
+        TwentytSix.setName(getString(R.string.Parachinar));
+
+        Location TwentytSeven = new Location();
+        TwentytSeven.setName(getString(R.string.Peshawar));
+
+        Location TwentytEight = new Location();
+        TwentytEight.setName(getString(R.string.Shangla));
+
+        Location TwentytNine = new Location();
+        TwentytNine.setName(getString(R.string.Swabi));
+
+        Location Thirtee = new Location();
+        Thirtee.setName(getString(R.string.Swat));
+
+        Location Thirteeone = new Location();
+        Thirteeone.setName(getString(R.string.Tank));
+
+        Location Thirteetwo = new Location();
+        Thirteetwo.setName(getString(R.string.Torkham));
+
+        Location Thirteethree = new Location();
+        Thirteethree.setName(getString(R.string.Upper_Dir));
+
+        Location Thirteefour = new Location();
+        Thirteefour.setName(getString(R.string.Wana));
 
 
         locationList.add(one);
+        locationList.add(two);
+        locationList.add(three);
+        locationList.add(four);
+        locationList.add(five);
+        locationList.add(six);
+        locationList.add(seven);
+        locationList.add(eight);
+        locationList.add(nine);
+        locationList.add(ten);
+        locationList.add(eleven);
+        locationList.add(twelve);
+        locationList.add(thirteen);
+        locationList.add(forteen);
+        locationList.add(fiveteen);
+        locationList.add(sixteen);
+        locationList.add(seventeen);
+        locationList.add(eighteen);
+        locationList.add(nineteen);
+        locationList.add(Twenty);
+        locationList.add(Twentyone);
+        locationList.add(Twentytwo);
+        locationList.add(Twentythree);
+        locationList.add(Twentytfour);
+        locationList.add(Twentytfive);
+        locationList.add(TwentytSix);
+        locationList.add(TwentytSeven);
+        locationList.add(TwentytEight);
+        locationList.add(TwentytNine);
+        locationList.add(Thirtee);
+        locationList.add(Thirteeone);
+        locationList.add(Thirteetwo);
+        locationList.add(Thirteethree);
+        locationList.add(Thirteefour);
+
 
         recyclerView.setAdapter(counteyLocationAdapter);
 

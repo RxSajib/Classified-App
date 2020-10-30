@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.digital.digitalbusinessowners.CountryPage.Azad_Kahmer;
 import com.digital.digitalbusinessowners.CountryPage.Balochistana;
 import com.digital.digitalbusinessowners.CountryPage.Islamabad_Capital_Territory;
+import com.digital.digitalbusinessowners.CountryPage.KhyberPakhtunkhwa;
+import com.digital.digitalbusinessowners.CountryPage.NorthernArea;
 import com.digital.digitalbusinessowners.Model.Location;
 import com.digital.digitalbusinessowners.R;
 import com.google.android.material.textview.MaterialTextView;
@@ -57,9 +59,14 @@ public class CounteyLocationAdapter extends RecyclerView.Adapter<CounteyLocation
                 if(name.equals("Islamabad Capital Territory")){
                     goto_ajadkasmir(new Islamabad_Capital_Territory());
                 }
+                if(name.equals("Khyber Pakhtunkhwa")){
+                    goto_ajadkasmir(new KhyberPakhtunkhwa());
+                }
+                if(name.equals("Northern Areas")){
+                    goto_ajadkasmir(new NorthernArea());
+                }
             }
         });
-
 
     }
 
