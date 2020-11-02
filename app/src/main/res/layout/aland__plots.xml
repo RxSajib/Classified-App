@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Property_Rent.Roommates_Paying_Guests">
+    tools:context=".Property_Rent.Land_Plots">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/TablesToolbarID"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/_12sdp"
-                android:text="Roommates &amp; Paying Guests"
+                android:text="Land &amp; Plots"
                 android:textColor="@color/carbon_black_87"
                 android:textSize="@dimen/_14sdp">
 
@@ -46,6 +46,7 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
+
     <ScrollView
         android:layout_below="@+id/TablesToolbarID"
         android:layout_width="match_parent"
@@ -54,6 +55,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
 
             <RelativeLayout
                 android:id="@+id/CategoryID"
@@ -85,7 +87,7 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Roommates &amp; Paying Guests">
+                            android:text="Land &amp; Plots">
 
                         </com.google.android.material.textview.MaterialTextView>
 
@@ -118,6 +120,7 @@
                 android:layout_below="@+id/CategoryID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
@@ -128,8 +131,8 @@
 
                 <LinearLayout
                     android:orientation="vertical"
-                    android:padding="@dimen/_15sdp"
                     android:layout_width="match_parent"
+                    android:padding="@dimen/_15sdp"
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textview.MaterialTextView
@@ -142,12 +145,129 @@
 
                     </com.google.android.material.textview.MaterialTextView>
 
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Type *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Agriculture land">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Commercial Plots">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Industrial Plots">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Residential Plots">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_8sdp"
-                        android:text="Furnished *">
+                        android:text="Area unit *">
 
                     </com.google.android.material.textview.MaterialTextView>
 
@@ -171,7 +291,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:layout_centerVertical="true"
-                                    android:text="No">
+                                    android:text="Kanal">
 
                                 </com.google.android.material.textview.MaterialTextView>
 
@@ -195,7 +315,31 @@
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:layout_centerVertical="true"
-                                    android:text="Yes">
+                                    android:text="Marla">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Square Feet">
 
                                 </com.google.android.material.textview.MaterialTextView>
 
@@ -207,6 +351,79 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Square Mester">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Square Yards">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Area *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_13sdp">
+
+
+                    </EditText>
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -263,14 +480,12 @@
                     </com.google.android.material.textview.MaterialTextView>
 
 
-
-
                 </LinearLayout>
 
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/PriceID"
+                android:id="@+id/priceID"
                 android:layout_below="@+id/DetailsID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -320,11 +535,14 @@
 
                 </LinearLayout>
 
+
+
+
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/PhotosID"
-                android:layout_below="@+id/PriceID"
+                android:id="@+id/PhotoID"
+                android:layout_below="@+id/priceID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <View
@@ -334,10 +552,11 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
+
                 <LinearLayout
+                    android:padding="@dimen/_15sdp"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:padding="@dimen/_15sdp"
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textview.MaterialTextView
@@ -444,15 +663,18 @@
                     </com.google.android.material.textview.MaterialTextView>
 
 
+
+
                 </LinearLayout>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/LocationID"
-                android:layout_below="@+id/PhotosID"
                 android:layout_width="match_parent"
+                android:layout_below="@+id/PhotoID"
                 android:layout_height="wrap_content">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
@@ -460,6 +682,7 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
@@ -523,6 +746,7 @@
                         </Spinner>
 
                     </RelativeLayout>
+
                 </LinearLayout>
 
             </RelativeLayout>
@@ -539,12 +763,12 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
-
                 <LinearLayout
-                    android:padding="@dimen/_15sdp"
                     android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -709,9 +933,12 @@
 
                 </RelativeLayout>
 
+
             </RelativeLayout>
 
+
         </RelativeLayout>
+
 
     </ScrollView>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Property_Rent.Roommates_Paying_Guests">
+    tools:context=".Property_Rent.Vecation_Rentals_Guest_House">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/TablesToolbarID"
@@ -45,6 +45,7 @@
         </LinearLayout>
 
     </com.google.android.material.appbar.MaterialToolbar>
+
 
     <ScrollView
         android:layout_below="@+id/TablesToolbarID"
@@ -118,6 +119,7 @@
                 android:layout_below="@+id/CategoryID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
@@ -127,8 +129,8 @@
                 </View>
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -147,66 +149,47 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_8sdp"
-                        android:text="Furnished *">
+                        android:text="Bedrooms *">
 
                     </com.google.android.material.textview.MaterialTextView>
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:orientation="horizontal">
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected">
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_70sdp"
-                            android:layout_height="@dimen/_32sdp"
-                            android:background="@drawable/radiobutton_unselected">
+                        <Spinner
+                            android:id="@+id/SpinerState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                        </Spinner>
 
-                                <com.google.android.material.textview.MaterialTextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:text="No">
+                    </RelativeLayout>
 
-                                </com.google.android.material.textview.MaterialTextView>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Bathroom *">
 
-                            </RelativeLayout>
+                    </com.google.android.material.textview.MaterialTextView>
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected">
 
-                        </LinearLayout>
+                        <Spinner
+                            android:id="@+id/SpinerState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_70sdp"
-                            android:layout_height="@dimen/_32sdp"
-                            android:layout_marginLeft="@dimen/_10sdp"
-                            android:background="@drawable/radiobutton_unselected">
+                        </Spinner>
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <com.google.android.material.textview.MaterialTextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:text="Yes">
-
-                                </com.google.android.material.textview.MaterialTextView>
-
-                            </RelativeLayout>
-
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
+                    </RelativeLayout>
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -270,10 +253,11 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/PriceID"
+                android:id="@+id/priceID"
                 android:layout_below="@+id/DetailsID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
@@ -281,9 +265,10 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -323,8 +308,8 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/PhotosID"
-                android:layout_below="@+id/PriceID"
+                android:id="@+id/ImageID"
+                android:layout_below="@+id/priceID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <View
@@ -334,6 +319,7 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -444,13 +430,14 @@
                     </com.google.android.material.textview.MaterialTextView>
 
 
+
                 </LinearLayout>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/LocationID"
-                android:layout_below="@+id/PhotosID"
+                android:layout_below="@+id/ImageID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <View
@@ -460,9 +447,10 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -523,6 +511,7 @@
                         </Spinner>
 
                     </RelativeLayout>
+
                 </LinearLayout>
 
             </RelativeLayout>
@@ -651,6 +640,7 @@
 
                     </Switch>
 
+
                 </LinearLayout>
 
             </RelativeLayout>
@@ -712,6 +702,8 @@
             </RelativeLayout>
 
         </RelativeLayout>
+
+
 
     </ScrollView>
 
