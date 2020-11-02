@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ProductUpload.UpdloadPageOne"></activity>
+        <activity android:name=".CategoryUpdate.Catagory"></activity>
+        <activity android:name=".ProductUpload.UpdloadPageOne" />
         <activity android:name=".BottomTab.Search" />
         <activity android:name=".Catagory.SubCatagory" />
         <activity android:name=".ProfilePage.Editprofile" />

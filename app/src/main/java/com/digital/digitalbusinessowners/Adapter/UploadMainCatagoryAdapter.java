@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.digital.digitalbusinessowners.Catagory.AllCatagory;
 import com.digital.digitalbusinessowners.Catagory.JobCatagory;
 import com.digital.digitalbusinessowners.Catagory.RentCatagory;
+import com.digital.digitalbusinessowners.Memory.SharedPref;
 import com.digital.digitalbusinessowners.Model.MainCatagory;
 import com.digital.digitalbusinessowners.R;
 import com.google.android.material.textview.MaterialTextView;
@@ -26,6 +27,7 @@ public class UploadMainCatagoryAdapter extends RecyclerView.Adapter<UploadMainCa
 
     private Context context;
     private List<MainCatagory> mainCatagoryList;
+    private SharedPref sharedPref;
 
     public UploadMainCatagoryAdapter(Context context, List<MainCatagory> mainCatagoryList) {
         this.context = context;
@@ -44,6 +46,8 @@ public class UploadMainCatagoryAdapter extends RecyclerView.Adapter<UploadMainCa
     public void onBindViewHolder(@NonNull MainCatagoryHolder holder, int position) {
         holder.setcatagory(mainCatagoryList.get(position));
 
+        sharedPref = new SharedPref(context);
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,18 +55,23 @@ public class UploadMainCatagoryAdapter extends RecyclerView.Adapter<UploadMainCa
                 String title = mainCatagoryList.get(position).getTitle();
                 if(title.equals("Searching for any product Buy")){
                     goto_all_catagorypage(new AllCatagory());
+                    sharedPref.putString("TYPE", "BuyProduct");
                 }
                 if(title.equals("Any product property or services sold")){
                     goto_all_catagorypage(new AllCatagory());
+                    sharedPref.putString("TYPE", "ServicesSold");
                 }
                 if(title.equals("Rent for property Advertising")){
                     goto_all_catagorypage(new RentCatagory());
+                    sharedPref.putString("TYPE", "RentAdvertsing");
                 }
                 if(title.equals("Searching for any rent")){
                     goto_all_catagorypage(new RentCatagory());
+                    sharedPref.putString("TYPE", "SearchingRent");
                 }
                 if(title.equals("For recruitment job advertising post")){
                     goto_all_catagorypage(new JobCatagory());
+                    sharedPref.putString("TYPE", "JobPost");
                 }
 
             }

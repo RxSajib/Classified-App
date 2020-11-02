@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryUpdate.CategoryPlaceHolder">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:id="@+id/PostAdsToolbarID"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:padding="@dimen/_5ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/back_arraw"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/carbon_black_87"
+                android:text="Post Your Ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/PostAdsToolbarID"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="CHOOSE A CATEGORY"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:id="@+id/CHooseCategoryID"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+        <RelativeLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_above="@+id/NotictionID"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/CHooseCategoryID"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_centerHorizontal="true"
+                android:background="@color/carbon_tab_text_unselected"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <LinearLayout
+                android:weightSum="4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:id="@+id/MobileButtonID"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/mobile_update"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:text="MOBILES"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/vehiclesID"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/vehicles_update"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:text="VEHICLES"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/carbon_tab_text_unselected"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:id="@+id/PropartySale"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/propartysale_update"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:text="PROPERTY FOR\nSALE"
+                                    android:gravity="center"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/PropartyRent"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/property_rent_update"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:text="PROPERTY FOR\nRENT"
+                                    android:gravity="center"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/carbon_tab_text_unselected"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:id="@+id/ElectronicHomeAppliances"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/tvupdate"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ELECTRONIC &amp;\nHOME\nAPPLIANCES"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/BikesID"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/bikes_update"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:text="BIKES"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/carbon_tab_text_unselected"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:id="@+id/BugnessIndAg"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/inderstree_update"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center"
+                                    android:text="BUSINESS,\nINDUSTRIAL&amp;\nAGRICULTURE"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/MoreID"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/more_update"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_30sdp">
+                                </ImageView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="wrap_content"
+                                    android:text="MORE"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/carbon_black_87"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/NotictionID"
+            android:layout_alignParentBottom="true"
+            android:background="@color/carbon_blueGrey_900"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textSize="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/carbon_white"
+                android:text="Free Classifieds In Pakistan &amp; UAE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostPage.PostPage">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Condition*"
+                    android:textColor="@color/carbon_black_87"></com.google.android.material.textview.MaterialTextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Used">
+
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Ad title*"
+                    android:textColor="@color/carbon_black_87"></com.google.android.material.textview.MaterialTextView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/title_box"
+                    android:gravity="start"
+                    android:hint="Input product title"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"></EditText>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Model"
+                    android:textColor="@color/carbon_black_87"></com.google.android.material.textview.MaterialTextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/title_box"
+                    android:gravity="start"
+
+                    android:hint="Input product model"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"></EditText>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Description *"
+                    android:textColor="@color/carbon_black_87"></com.google.android.material.textview.MaterialTextView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/title_box"
+                    android:gravity="start"
+                    android:hint="Input product details"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_13sdp"></EditText>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Price*"
+                    android:textColor="@color/carbon_black_87"></com.google.android.material.textview.MaterialTextView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/title_box">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/Pak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="PAK"
+                        android:textColor="@color/carbon_black">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <View
+                        android:id="@+id/View"
+                        android:layout_width="@dimen/_1ssp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/Pak"
+                        android:background="@color/carbon_black_54"></View>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/View"
+                        android:background="@null"
+                        android:hint="Value"
+                        android:textSize="@dimen/_13sdp">
+
+                    </EditText>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/AddImageButtonID">
+
+                        <LinearLayout
+                            android:weightSum="4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:elevation="0.5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:background="@drawable/plus_backgrund"
+                                    android:layout_height="@dimen/_15sdp">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:textColor="@color/carbon_white"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text="+"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </com.google.android.material.textview.MaterialTextView>
+
+                                </RelativeLayout>
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="match_parent"
+                                    app:riv_border_width="1dip"
+                                    android:id="@+id/ImageOne"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="@dimen/_10sdp"
+                                    android:background="@drawable/round_image_placeholder"
+                                    app:riv_border_color="#333333"
+                                    android:layout_height="match_parent">
+
+                                </com.makeramen.roundedimageview.RoundedImageView>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="match_parent">
+
+
+                                <RelativeLayout
+                                    android:elevation="0.5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:background="@drawable/plus_backgrund"
+                                    android:layout_height="@dimen/_15sdp">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:textColor="@color/carbon_white"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text="+"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </com.google.android.material.textview.MaterialTextView>
+
+                                </RelativeLayout>
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="match_parent"
+                                    app:riv_border_width="1dip"
+                                    android:id="@+id/ImageTwo"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="@dimen/_10sdp"
+                                    android:background="@drawable/round_image_placeholder"
+                                    app:riv_border_color="#333333"
+                                    android:layout_height="match_parent">
+
+                                </com.makeramen.roundedimageview.RoundedImageView>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="match_parent">
+
+
+                                <RelativeLayout
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:background="@drawable/plus_backgrund"
+                                    android:layout_height="@dimen/_15sdp">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:textColor="@color/carbon_white"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text="+"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </com.google.android.material.textview.MaterialTextView>
+
+                                </RelativeLayout>
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="match_parent"
+                                    app:riv_border_width="1dip"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="@dimen/_10sdp"
+                                    android:background="@drawable/round_image_placeholder"
+                                    app:riv_border_color="#333333"
+                                    android:layout_height="match_parent">
+
+                                </com.makeramen.roundedimageview.RoundedImageView>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+
+                                <RelativeLayout
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:elevation="0.5dp"
+                                    android:background="@drawable/plus_backgrund"
+                                    android:layout_height="@dimen/_15sdp">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:textColor="@color/carbon_white"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text="+"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </com.google.android.material.textview.MaterialTextView>
+
+                                </RelativeLayout>
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="match_parent"
+                                    app:riv_border_width="1dip"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="@dimen/_10sdp"
+                                    android:background="@drawable/round_image_placeholder"
+                                    app:riv_border_color="#333333"
+                                    android:layout_height="match_parent">
+
+                                </com.makeramen.roundedimageview.RoundedImageView>
+
+                            </RelativeLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/PlaseHolderImage"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:visibility="gone"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/gallery"></ImageView>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/AddImageButtonID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/carbon_green_400">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Add Photos(Max 4)"
+                            android:textColor="@color/carbon_white"
+                            android:textSize="@dimen/_13sdp">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="About you"
+                    android:textColor="@color/carbon_black_87"></com.google.android.material.textview.MaterialTextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/myinfo_box_back">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_5sdp">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="@dimen/_10sdp"></com.google.android.material.textview.MaterialTextView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mr Sajib Roy"
+                            android:textColor="@color/carbon_black_87"
+                            android:textSize="@dimen/_13sdp"></com.google.android.material.textview.MaterialTextView>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Phone"
+                            android:textSize="@dimen/_10sdp"></com.google.android.material.textview.MaterialTextView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="01771330378"
+                            android:textColor="@color/carbon_black_87"
+                            android:textSize="@dimen/_13sdp"></com.google.android.material.textview.MaterialTextView>
+
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Do you want to hide phone"
+                            android:textSize="@dimen/_10sdp">
+
+                        </CheckBox>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Add phone"
+                    android:textColor="@color/carbon_black_87"></com.google.android.material.textview.MaterialTextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/title_box"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:padding="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_13sdp"></EditText>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/carbon_green_400">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Submit Post"
+                        android:textColor="@color/carbon_white"
+                        android:textSize="@dimen/_13sdp">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -17,6 +17,8 @@ import com.digital.digitalbusinessowners.CountryPage.Balochistana;
 import com.digital.digitalbusinessowners.CountryPage.Islamabad_Capital_Territory;
 import com.digital.digitalbusinessowners.CountryPage.KhyberPakhtunkhwa;
 import com.digital.digitalbusinessowners.CountryPage.NorthernArea;
+import com.digital.digitalbusinessowners.CountryPage.Panjab;
+import com.digital.digitalbusinessowners.CountryPage.Sindh;
 import com.digital.digitalbusinessowners.Model.Location;
 import com.digital.digitalbusinessowners.R;
 import com.google.android.material.textview.MaterialTextView;
@@ -64,6 +66,12 @@ public class CounteyLocationAdapter extends RecyclerView.Adapter<CounteyLocation
                 }
                 if(name.equals("Northern Areas")){
                     goto_ajadkasmir(new NorthernArea());
+                }
+                if(name.equals("Punjab")){
+                    goto_ajadkasmir(new Panjab());
+                }
+                if(name.equals("Sindh")){
+                    goto_ajadkasmir(new Sindh());
                 }
             }
         });

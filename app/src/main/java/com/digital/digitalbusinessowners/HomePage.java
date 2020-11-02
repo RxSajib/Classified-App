@@ -16,6 +16,7 @@ import com.digital.digitalbusinessowners.BottomTab.Chat;
 import com.digital.digitalbusinessowners.BottomTab.Home;
 import com.digital.digitalbusinessowners.BottomTab.Profile;
 import com.digital.digitalbusinessowners.BottomTab.Search;
+import com.digital.digitalbusinessowners.CategoryUpdate.Catagory;
 import com.digital.digitalbusinessowners.Memory.SharedPref;
 import com.digital.digitalbusinessowners.ProductUpload.UpdloadPageOne;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -27,6 +28,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+
+import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -53,7 +56,7 @@ public class HomePage extends AppCompatActivity {
         uploadproductbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), UpdloadPageOne.class);
+                Intent intent = new Intent(getApplicationContext(), Catagory.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }

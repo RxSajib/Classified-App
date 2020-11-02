@@ -14,6 +14,7 @@ import android.os.Bundle;
 
 import com.digital.digitalbusinessowners.Adapter.UploadMainCatagoryAdapter;
 import com.digital.digitalbusinessowners.Catagory.CatagoryPage;
+import com.digital.digitalbusinessowners.Catagory.LocationPage;
 import com.digital.digitalbusinessowners.Memory.SharedPref;
 import com.digital.digitalbusinessowners.Model.MainCatagory;
 import com.digital.digitalbusinessowners.R;
@@ -34,7 +35,7 @@ public class UpdloadPageOne extends AppCompatActivity {
 
         sharedPref = new SharedPref(getApplicationContext());
 
-       goto_page_one(new CatagoryPage());
+       goto_page_one(new LocationPage());
 
 
 

@@ -168,7 +168,6 @@
     <string name="Wazirabad">Wazirabad</string>
 
 
-
     <string name="Badin">Badin</string>
     <string name="Dadu">Dadu</string>
     <string name="Ghotki">Ghotki</string>
@@ -190,5 +189,20 @@
     <string name="Thatta">Thatta</string>
     <string name="Umerkot">Umerkot</string>
 
+
+    <string name="Mobiles">Mobiles</string>
+    <string name="Vehicles">Vehicles</string>
+    <string name="Property_for_Sale">Property for Sale</string>
+    <string name="Property_for_Rent">Property for Rent</string>
+    <string name="Electronics_Home_Appliances">Electronics &amp; Home Appliances</string>
+    <string name="Bikes">Bikes</string>
+    <string name="Business_Industrial_Agriculture">Business, Industrial &amp; Agriculture</string>
+    <string name="Services">Services</string>
+    <string name="Jobs">Jobs</string>
+    <string name="Animals">Animals</string>
+    <string name="Furniture_Home_Decor">Furniture &amp; Home Decor</string>
+    <string name="Fashion_Beauty">Fashion &amp; Beauty</string>
+    <string name="Books_Sports_Hobbies">Books, Sports &amp; Hobbies</string>
+    <string name="Kids">Kids</string>
 
 </resources>

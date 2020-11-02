@@ -47,4 +47,13 @@ public class DataManager {
     public static final String Agriculture = "AgricultureCatagory";
     public static final String Type = "Type";
 
+    public static final String Subcategory = "Subcategory";
+    public static final String MobileUpdate = "Mobile";
+    public static final String Vehicles = "Vehicles";
+    public static final String PropartySale = "Property for Sale";
+    public static final String PropartyRent = "Property for Rent";
+    public static final String ElectronicHomeAppliances = "Electronics & Home Appliances";
+    public static final String Bikes = "Bikes";
+    public static final String BugnessIndustrial_agri = "Business, Industrial & Agriculture";
+
 }

@@ -62,5 +62,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:12.0.1'
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.firebaseui:firebase-ui-database:1.1.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
 
 }

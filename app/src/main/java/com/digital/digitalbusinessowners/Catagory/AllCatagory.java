@@ -69,13 +69,7 @@ public class AllCatagory extends Fragment {
         proparty.setImage(R.drawable.proparty_home);
         proparty.setTitle("Property");
 
-        AllCatagoryList job = new AllCatagoryList();
-        job.setTitle("Job");
-        job.setImage(R.drawable.job);
 
-        AllCatagoryList formerjob = new AllCatagoryList();
-        formerjob.setImage(R.drawable.worldjob);
-        formerjob.setTitle("Former Job");
 
         AllCatagoryList services = new AllCatagoryList();
         services.setImage(R.drawable.services);
@@ -115,8 +109,6 @@ public class AllCatagory extends Fragment {
         catagoryLists.add(electronic);
         catagoryLists.add(vychel);
         catagoryLists.add(proparty);
-        catagoryLists.add(job);
-        catagoryLists.add(formerjob);
         catagoryLists.add(services);
         catagoryLists.add(homeinstument);
         catagoryLists.add(fation);
