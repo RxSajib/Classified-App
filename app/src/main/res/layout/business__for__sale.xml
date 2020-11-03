@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bugness_Industrial_Agriculture.Business_For_Sale">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/TablesToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_5ssp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/back_arraw">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:text="Scooters"
+                android:textColor="@color/carbon_black_87"
+                android:textSize="@dimen/_14sdp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:layout_below="@id/TablesToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/CategoryID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECTED CATEGORY"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scooters">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Change"
+                            android:textColor="@color/carbon_black_87">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/carbon_tab_text_unselected">
+
+                </View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/DetailsID"
+                android:layout_below="@+id/CategoryID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/carbon_tab_text_unselected">
+
+                </View>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INCLUDE SOME DETAILS"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+
+
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Add title *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_13sdp">
+
+
+                    </EditText>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="Mention the key features of your item (e.d. brand, model, age, type)">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Descripition *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_13sdp"></EditText>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="Include condition, fetures and reson for selling">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/priceID"
+                android:layout_below="@+id/DetailsID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/carbon_tab_text_unselected">
+
+                </View>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SET A PRICE"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Price *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected"
+                        android:inputType="number"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_13sdp">
+
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ImageID"
+                android:layout_below="@+id/priceID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/carbon_tab_text_unselected">
+
+                </View>
+
+                <LinearLayout
+                    android:padding="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPLOAD UP TO 4 PHOTOS"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:background="@drawable/add_photos_box">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/add_photos">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/add_photos_box">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/add_photos">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:background="@drawable/add_photos_box">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/add_photos">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/add_photos_box">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/add_photos">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="This fields is mandatory"
+                        android:textColor="@color/carbon_red_400">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LocationID"
+                android:layout_below="@+id/ImageID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/carbon_tab_text_unselected">
+
+                </View>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONFRIM YOUR LOCATION"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="State *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected">
+
+                        <Spinner
+                            android:id="@+id/SpinerState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="City *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/CityesID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ProfileID"
+                android:layout_below="@+id/LocationID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/carbon_tab_text_unselected">
+
+                </View>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REVIEW YOUR PROFILE"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ProfileImageID"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:background="@drawable/placeholder_oval">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_toRightOf="@+id/ProfileImageID"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:text="Name">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5ssp"
+                                    android:background="@drawable/radiobutton_unselected"
+                                    android:hint="Username"
+                                    android:padding="@dimen/_10sdp"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/_13sdp">
+
+
+                                </EditText>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Mobile Phone Number *">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:background="@drawable/radiobutton_unselected"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_13sdp">
+
+
+                    </EditText>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:text="Ergetnt"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_12sdp"></Switch>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:text="doorstep delivery"
+                        android:textColor="@color/carbon_black_54"
+                        android:textSize="@dimen/_12sdp">
+
+                    </Switch>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/ProfileID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/Box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/PostButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/post_button_back">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Post Now"
+                            android:textColor="@color/carbon_black_54"
+                            android:textStyle="bold">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/Box"
+                    android:background="@color/carbon_blueGrey_900">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Free Classifieds in Paskitan &amp; UAE"
+                        android:textColor="@color/carbon_white"
+                        android:textSize="@dimen/_12sdp">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
