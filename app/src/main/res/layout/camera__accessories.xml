@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Electronic.Computer_Accessories">
+    tools:context=".Electronic.Camera_Accessories">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/TablesToolbarID"
@@ -36,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/_12sdp"
-                android:text="Computers &amp; Accessories"
+                android:text="Cameras &amp; Accessories"
                 android:textColor="@color/carbon_black_87"
                 android:textSize="@dimen/_14sdp">
 
@@ -46,8 +45,9 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
+
     <ScrollView
-        android:layout_below="@+id/TablesToolbarID"
+        android:layout_below="@id/TablesToolbarID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -86,7 +86,7 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Computers &amp; Accessories">
+                            android:text="Cameras &amp; Accessories">
 
                         </com.google.android.material.textview.MaterialTextView>
 
@@ -119,6 +119,7 @@
                 android:layout_below="@+id/CategoryID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
@@ -132,6 +133,7 @@
                     android:padding="@dimen/_15sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -206,6 +208,7 @@
 
 
                     </LinearLayout>
+
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -214,20 +217,99 @@
 
                     </com.google.android.material.textview.MaterialTextView>
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5ssp"
-                        android:background="@drawable/radiobutton_unselected">
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
 
-                        <Spinner
-                            android:id="@+id/SpinerState"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:background="@drawable/radiobutton_unselected">
 
-                        </Spinner>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
-                    </RelativeLayout>
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Cameras">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Lense">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:background="@drawable/radiobutton_unselected">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Cameras">
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -284,16 +366,16 @@
                     </com.google.android.material.textview.MaterialTextView>
 
 
+
                 </LinearLayout>
 
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/PriceID"
+                android:id="@+id/priceID"
                 android:layout_below="@+id/DetailsID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
@@ -301,13 +383,11 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
-
                 <LinearLayout
                     android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -345,8 +425,8 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/PhotoID"
-                android:layout_below="@+id/PriceID"
+                android:id="@+id/ImageID"
+                android:layout_below="@+id/priceID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <View
@@ -356,9 +436,10 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -473,10 +554,9 @@
 
             <RelativeLayout
                 android:id="@+id/LocationID"
-                android:layout_below="@+id/PhotoID"
+                android:layout_below="@+id/ImageID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
@@ -484,14 +564,11 @@
                     android:background="@color/carbon_tab_text_unselected">
 
                 </View>
-
-
                 <LinearLayout
                     android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -569,9 +646,9 @@
                 </View>
 
                 <LinearLayout
+                    android:orientation="vertical"
                     android:padding="@dimen/_15sdp"
                     android:layout_width="match_parent"
-                    android:orientation="vertical"
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textview.MaterialTextView
